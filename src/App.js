@@ -33,7 +33,6 @@ const App = () => {
     },
   ]);
 
-  // États pour les filtres
   const [titleFilter, setTitleFilter] = useState("");
   const [ratingFilter, setRatingFilter] = useState("");
 
