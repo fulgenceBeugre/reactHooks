@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+
 const AddMovieForm = ({ onAddMovie }) => {
   const [newMovie, setNewMovie] = useState({
     title: "",
     description: "",
     posterURL: "",
     rating: 1,
+    url: "",
   });
 
   const handleChange = (e) => {
@@ -23,6 +25,7 @@ const AddMovieForm = ({ onAddMovie }) => {
       description: "",
       posterURL: "",
       rating: 1,
+      url: "",
     });
   };
 
@@ -60,6 +63,17 @@ const AddMovieForm = ({ onAddMovie }) => {
             value={newMovie.posterURL}
             onChange={handleChange}
             placeholder="https://example.com/movie-poster.jpg"
+            className="form-input"
+          />
+        </div>
+        <div className="form-group">
+          <label className="form-label">URL de la bande d'annonce</label>
+          <input
+            type="text"
+            name="url"
+            value={newMovie.url}
+            onChange={handleChange}
+            placeholder="https://www.senscritique.com/morceau/wake_me_up/106008602"
             className="form-input"
           />
         </div>

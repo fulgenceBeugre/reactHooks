@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import AddMovieForm from "./addMovieForm";
 import "./App.css";
 
@@ -14,6 +16,7 @@ const App = () => {
       posterURL:
         "https://media.senscritique.com/media/000022599251/0/better_man.png",
       rating: 4,
+      url: "https://www.senscritique.com/film/better_man/100376247",
     },
     {
       title: "The Brutalist (2024)",
@@ -22,6 +25,7 @@ const App = () => {
       posterURL:
         "https://media.senscritique.com/media/000022647875/0/the_brutalist.png",
       rating: 5,
+      url: "https://www.senscritique.com/film/the_brutalist/42954168",
     },
     {
       title: "Mémoires d’un escargot (2024)",
@@ -30,6 +34,7 @@ const App = () => {
       posterURL:
         "https://media.senscritique.com/media/000022500290/0/memoires_dun_escargot.png",
       rating: 4,
+      url: "https://www.senscritique.com/film/memoires_dun_escargot/45601513",
     },
   ]);
 
